@@ -116,6 +116,9 @@ class Game:
 
     # And just throw it all in one line.
     print('  '.join(str(x) for x in data))
+    txt_output='  '.join(str(x) for x in data)
+    with open('output.txt', 'a', encoding='utf-8') as f:
+      f.write(f"{txt_output},\n")
 
   # This is just so the router doesn't have to use the word "cookies".
   def currency_produced(self): return self.total_cookies

@@ -1,7 +1,7 @@
 from router import Router
 import cookie_clicker.categories as cats
 
-g = cats.longhaul(player_cps=20)
+g = cats.longhaul(player_cps=20) #choose a def in categories.py
 r = Router()
 
 game_over = r.route_GPL(g, lookahead=1)

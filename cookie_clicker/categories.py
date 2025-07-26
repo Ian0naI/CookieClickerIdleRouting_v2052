@@ -84,7 +84,7 @@ def short(version=v2031, player_cps=8, player_delay=1):
   game.player_delay = player_delay
   return game
 
-# Route to the first optimal ascension for long-term playthrough.######################################################################
+# Route to the first optimal ascension for long-term playthrough.
 def longhaul(version=v2048, player_cps=20, player_delay=0.01):
   game = Game(version)
   game.target_cookies = 1000 * v2048.unvigintillion

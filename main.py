@@ -11,3 +11,8 @@ final_time_hours = final_time / 60 / 60
 
 print('Final time: ' + str(final_time_hours))
 print(game_over.num_buildings)
+
+txt_output1='Final time: ' + str(final_time_hours)
+txt_output2=game_over.num_buildings
+with open('output.txt', 'a', encoding='utf-8') as f:
+    f.write(f"{txt_output1},\n,{txt_output2}")
